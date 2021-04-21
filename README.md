@@ -3,11 +3,22 @@
 
 ## My Notes
 
+### LC819
+
+这题用到了lambda function
+
+'sort_result = sorted(dic.items(), key = lambda kv:(kv[1], kv[0]))'
+
 ### LC 11
 动态规划以及优化速度的方法（把比较和计算复用起来，放到后面去，每次循环都省一次计算）
 
 ### LC5 longest palindromic substring
 动态规划
+
+## 速度问题review
+### LC3 
+### LC4
+### LC1573
 
 ## Submit Records
 
