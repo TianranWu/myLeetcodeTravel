@@ -1,5 +1,5 @@
 # myLeetcodeTravel
-[toc]
+
 
 ## My Notes
 
