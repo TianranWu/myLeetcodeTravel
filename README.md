@@ -111,3 +111,8 @@ class Solution:
 - LC 12 Integer to Roman
 执行用时：52 ms, 在所有 Python 提交中击败了81.21%的用户
 内存消耗：13 MB, 在所有 Python 提交中击败了41.66%的用户
+
+0424
+- LC 13
+执行用时：68 ms, 在所有 Python 提交中击败了52.99%的用户
+内存消耗：13 MB, 在所有 Python 提交中击败了47.51%的用户
