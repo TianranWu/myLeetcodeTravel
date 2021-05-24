@@ -3,6 +3,15 @@
 
 ## My Notes
 
+### 动态规划专题
+Created 2021.05.24
+Updated 2021.0524
+
+### 664. Strange Printer
+### 1035. 不相交的线
+### 1143. 最长公共子序列
+
+
 ### LC819
 
 这题用到了lambda function
@@ -17,6 +26,7 @@
 
 ## 速度问题review
 ### LC3 longest substring without repeating characters
+滑动窗口法
 ```
 我的方法是：
 1. 统计字符串里的所有不同字符。用set函数即可实现。
