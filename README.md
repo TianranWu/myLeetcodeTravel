@@ -16,6 +16,9 @@ Updated 2021.05.24
 #### LC 11
 动态规划以及优化速度的方法（把比较和计算复用起来，放到后面去，每次循环都省一次计算）
 
+#### 516. Longest Palindromic Subsequence
+    单个字符串的dp，顺序一定要记得i从最大len递降，j从i递增。
+
 #### 664. Strange Printer
 #### 1035. 不相交的线
 
