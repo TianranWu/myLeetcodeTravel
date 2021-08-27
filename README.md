@@ -4,6 +4,8 @@
 ## My Notes
 
 ### 双指针
+谨慎动原数组。Remain the list the same and change only the left and the right pointer.
+
 #### 881. 救生艇
 I use a sort and an index - that is silly. 
 Just try always consider the heaviest and the lightest!!! 
