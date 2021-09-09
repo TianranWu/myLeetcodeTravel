@@ -32,7 +32,7 @@ class Solution:
                 # c = digits[j] - '0'
                 zimu_string = phoneMap[digits[j]]
                 pos = last % len(zimu_string)
-                sb = sb+ zimu_string[int(pos)]
+                sb = sb + zimu_string[int(pos)]
                 last = last/len(zimu_string)
                 
 
@@ -68,13 +68,13 @@ class Solution:
         }
 
         def backtrack(index: int):
-            if index == len(digits):
+            if index == len(digits): # 如果index已经到了指定输出长度，那么该次完成。数组变字符串，推进数组
                 combinations.append("".join(combination))
-            else:
-                digit = digits[index]
-                for letter in phoneMap[digit]:
-                    combination.append(letter)
-                    backtrack(index + 1)
+            else: # 如果长度还不达标，就需要处理下一个digits对应的字母，
+                digit = digits[index] # 本次处理的数字是
+                for letter in phoneMap[digit]: 
+                    combination.append(letter) # 将其加进字符串（此时是数组形式）。 此时长度是index + 1
+                    backtrack(index + 1) # 然后尝试下一个
                     combination.pop()
 
         combination = list()
