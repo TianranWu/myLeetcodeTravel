@@ -1,0 +1,26 @@
+class Solution(object):
+    def removeNthFromEnd(self, head, n):
+        """
+        :type head: ListNode
+        :type n: int
+        :rtype: ListNode
+        """
+
+        ahead = head
+        back = head
+
+        # ahead goes first! n elements ahead of back
+        for _ in range(n):
+
+            if ahead.next:
+                ahead = ahead.next 
+            else:
+                # if n = len(listnode)
+                return head.next
+
+        while(ahead.next):
+            ahead = ahead.next
+            back = back.next
+        back.next = back.next.next
+
+        return head
