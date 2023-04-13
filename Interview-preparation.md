@@ -54,14 +54,30 @@ Situation:
 
 - Quad Bayer: popular widely used sensor in Smart Phones, 因为高分辨率在相对比较小的手机屏幕上比较冗余，所以用QB结构实现two modes which is high resolution mode and lower resolution mode。其实就是牺牲一部分resolution换取Sensor的快速读取和响应，同时应对一些过饱和问题。
 
-- 
-
+（Quad Bayer是一种sensor结构，相对于之前的RGGB阵列来说，QuadBayer以4个同颜色像素为一组。主要是为了实现拍照时的模式切换，高清模式和节能模式。这主要是因为现在的拍照像素相对于手机屏幕大小来说稍微有点冗余了。IPhone14 Pro，小米12Pro，三星 Galaxy A70都在用这个结构。）
 
 Task:
 
+HDR
+
 Action:
 
+我们引入了Multi exposure level binning的方法在sensor上进行读取。
+
+（Multi exposure是什么，它能在硬件上简单实现）
+
+读取时间相对于完全读取缩短四分之三。其二是我们的HDR imaging 阶段， 使用了一个对称结构的Unet来实现。
+
+（4个Enc Blocks， 4个Dec Blocks，每个包含2层Conv层。Loss是一个MSE loss，但loss并非是在raw图做的，而是在tone mapping后的domain算的。）
+
 Results:
+
+实验结果上，用的是Funt 和Kalantari这两个公开的HDR数据集上的测试结果，指标包括PSNR，SSIM和HDR-VDP-2这些质量指标。同时我们也在意参数和计算量。
+
+和SOTA比，计算量上是STOA的70分之一，参数量是60%，质量完全超越；和完全读取比，计算量是四分之一，质量持平，证明Unet足够有能力复原在读取阶段失去的四分之三像素内容。
+
+这篇工作现在在ICIP审核中。
+
 
 ### Transfer Learning in Knowledge-based Video Question Answering (VideoQA)
 
