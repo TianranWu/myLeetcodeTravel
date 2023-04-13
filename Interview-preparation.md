@@ -12,40 +12,56 @@ I will graduate next Sep as a master. I am fluent in english and got a 161/180 i
 
 ## Projects
 
-### GNN based malicious account detection method
+### Hulu: GNN based malicious account detection method
 
 **Stituation:** 
 
-攻击、共享、薅羊毛
+- 攻击、共享、薅羊毛
 
-线上模型比较分散，有的无监督有的有监督，分数无法fusion，难以对一用户构造一个统一的危险系数分
+- 线上模型比较分散，有的无监督有的有监督，分数无法fusion，难以对一用户构造一个统一的危险系数分
 
-时间聚集性和设备聚集性 - LSTM和GNN
+- 时间聚集性和设备聚集性 - LSTM和GNN
 
 **Task:**
 
-daily run，评分。高可疑，高评分。
+- daily run，评分。高可疑，高评分。
 
-General评分框架，把线上的独立模型打通，每一个用户都有一个可以同级比较的分。
+- General评分框架，把线上的独立模型打通，每一个用户都有一个可以同级比较的分。
 
 **Action:**
 
-时序特征，1hr的session count
+- 时序特征，1hr的session count
 
-metadata特征
+- metadata特征
 
-cross特征
+- cross特征
 
-统计特征
+- 统计特征
 
-正样本：线上模型的结果，负样本：randomly selected
+- 正样本：线上模型的结果，负样本：randomly selected
+
+- 模型上：GraphSage，异构图，Attention结构，LSTM based Embeddings
 
 **Result:**
 
-Recall 95%，
+- Recall 95%，
 
-Precision 97%
+- Precision 97%
 
+### Xiaomi Japan: High Dynamic Range Imaging with Multi-exposure Binning on Quad Bayer Color Filter Array
+
+Situation:
+
+- Quad Bayer: popular widely used sensor in Smart Phones, 因为高分辨率在相对比较小的手机屏幕上比较冗余，所以用QB结构实现two modes which is high resolution mode and lower resolution mode。其实就是牺牲一部分resolution换取Sensor的快速读取和响应，同时应对一些过饱和问题。
+
+- 
+
+
+Task:
+
+Action:
+
+Results:
 
 ### Transfer Learning in Knowledge-based Video Question Answering (VideoQA)
 
