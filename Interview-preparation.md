@@ -12,9 +12,42 @@ I will graduate next Sep as a master. I am fluent in english and got a 161/180 i
 
 ## Projects
 
-### Transfer Learning in Knowledge-based Video Question 
+### GNN based malicious account detection method
 
-**Answering (VideoQA)**
+**Stituation:** 
+
+攻击、共享、薅羊毛
+
+线上模型比较分散，有的无监督有的有监督，分数无法fusion，难以对一用户构造一个统一的危险系数分
+
+时间聚集性和设备聚集性 - LSTM和GNN
+
+**Task:**
+
+daily run，评分。高可疑，高评分。
+
+General评分框架，把线上的独立模型打通，每一个用户都有一个可以同级比较的分。
+
+**Action:**
+
+时序特征，1hr的session count
+
+metadata特征
+
+cross特征
+
+统计特征
+
+正样本：线上模型的结果，负样本：randomly selected
+
+**Result:**
+
+Recall 95%，
+
+Precision 97%
+
+
+### Transfer Learning in Knowledge-based Video Question Answering (VideoQA)
 
 **Situation:** VideoQA, challending work. Few existing datasets. Knowledge base. Seperated thing. can be reused without retraining.
 
