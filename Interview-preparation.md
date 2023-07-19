@@ -4,23 +4,26 @@
 
 ## Introduction
 
-Hello I am Tianran Wu from Osaka university. 
+Hello, I am Tianran Wu from Hulu, I graduated from Osaka University last October. 
 
-I will graduate next Sep as a master. I am fluent in english and got a 161/180 in JLPT N2. My research interests are joint learning of language and vision and efficient neural networks. My paper got accepted by BMVC 2021. I am familiar with python and pytorch. I also know how to use matlab and C. 
+I am fluent in English and got a 161/180 in JLPT N2. 
 
+My research interests include deep learning, computer vision, and multi-modal learning. I have two papers that got accepted by BMVC 2021 and this year's ICIP. One is during my master's study. The other is done during my 4-month internship at Xiaomi Tokyo. As for software language, I am familiar with Python and Pytorch. I also know how to use Matlab and C. 
 
 
 ## Projects
 
-### Hulu: GNN based malicious account detection method
+### Hulu: GNN-based malicious account detection method
 
-**Stituation:** 
+**Situation:** 
 
 - 攻击、共享、薅羊毛
 
 - 线上模型比较分散，有的无监督有的有监督，分数无法fusion，难以对一用户构造一个统一的危险系数分
 
-- 时间聚集性和设备聚集性 - LSTM和GNN
+- 时间聚集性和设备聚集性
+
+- LSTM和GNN
 
 **Task:**
 
@@ -81,9 +84,9 @@ Results:
 
 ### Transfer Learning in Knowledge-based Video Question Answering (VideoQA)
 
-**Situation:** VideoQA, challending work. Few existing datasets. Knowledge base. Seperated thing. can be reused without retraining.
+**Situation:** VideoQA, challenging work. Few existing datasets. Knowledge base. Separated thing. can be reused without retraining.
 
-**Task:** study how the knowledge learned by the model generalised for different domains.
+**Task:** Study how the knowledge learned by the model is generalized for different domains.
 
 **Action:**
 
@@ -91,7 +94,7 @@ Results:
 
 - split the knowledge into two types. 
 
-- propose two modules to mitigate the gap between the knowledge in source and target dataset.
+- propose two modules to mitigate the gap between the knowledge in the source and target dataset.
 - DET
 - Data augmentation
 
@@ -103,14 +106,14 @@ Results:
 
 ### UVQA project
 
-**Situation:** VideoQA, challending work. Few existing datasets. 
+**Situation:** VideoQA, challenging work. Few existing datasets. 
 
-Task: we want to generate image relevant QA pairs, use them as the training samples to boost the performance.
+Task: we want to generate image-relevant QA pairs, and use them as training samples to boost the performance.
 
 **Action:**
 
-- DAE, to train a encoder-decoder that can denoise sentences
-- Ae-Adv loss to generate question-like sentence, using the decoder from the DAE
+- DAE, to train an encoder-decoder that can denoise sentences
+- Ae-Adv loss to generate question-like sentences, using the decoder from the DAE
 - Policy gradient method to generate relevant sentences
 
 **Result:**
